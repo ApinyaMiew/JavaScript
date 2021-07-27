@@ -12,18 +12,25 @@ h1 {
 }
 
 .todo {
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 30px;
+    grid-template-rows: 30px;
+    margin-top: 28px;
+
 }
 
 .todo-title {    
+    display: grid;
     width: 100%;
     max-width: 500px;
-    height: 200px;
+    height: 160px;
     border:3px solid violet ;
 }
 
 .todo-list {
-    display: block;
+    background-color: rgb(226, 170, 252);
+    width: 100%;
+    max-width: 530px;
     position: relative;
 }
 .add-todo {
@@ -34,22 +41,24 @@ h1 {
     margin-top: 10px;
 }
 .line-todo{
-    background-color: rgb(226, 170, 252);
-    width: 100%;
-    max-width: 300px;
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
     display: inline;
-    margin-left: 10px;
 }
 .remove-todo {
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
     display: inline;
+    margin-left: 250px ;
+    width: 56px;
 }
 .like-todo {
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
+    width: 56px;
+    height: 30px;
     display: inline;
-    margin-left: 20px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0px;
 }

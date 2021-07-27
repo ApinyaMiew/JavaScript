@@ -6,17 +6,11 @@ function removeTodo(event) {
   event.target.parentNode.remove();
 }
 
-/*let count = 0;
-function likeTodo() {
-  count += 1;
-  //document.querySelector('.like-todo').innerHTML = like;*/
 function addTodo() {
   // todo
   const todo = document.createElement('div');
   todo.classList.add('todo');
-  //const inputs = document.querySelectorAll('input');
-  //inputs.forEach(input => input.value = '');
-  
+
   // text
   const text = document.createElement('line-todo');
   text.classList.add('line-todo')
@@ -26,15 +20,10 @@ function addTodo() {
   const button = document.createElement('button');
   button.type = 'button';
   button.classList.add('remove-todo');
-  button.innerHTML = 'ลบ';
+  button.innerHTML = 'Delete';
   button.addEventListener('click', removeTodo);
-  
-  /*const button2 = document.createElement('input');
-  button2.type = 'checkbox';
-  button2.classList.add('line-todo');
-  button2.addEventListener('click', checkTodo);
-  // text, button => todo*/
 
+  // button
   const button2 = document.createElement('button');
   button2.type = 'button';
   button2.classList.add('like-todo');
